@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameData">
+      <UniqueIdentifier>{3ffa0ef5-752a-4fc1-b17c-96d50f12ab6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StateMachine">
+      <UniqueIdentifier>{1b296f14-fe44-4fb1-9590-46cd5b7af521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeltaTime">
+      <UniqueIdentifier>{ad219cb6-9b2b-440f-9a72-192c161a3fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AssetManager">
+      <UniqueIdentifier>{5e958379-69d1-4882-9759-f5d66f70469d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{a785e78b-7a87-4e8e-96c8-9e80003c4e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\SplashState">
+      <UniqueIdentifier>{42789743-cc43-4722-bd22-5e4d519ff6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\GameState">
+      <UniqueIdentifier>{24428d80-0cb2-4b52-9804-57c3a857eada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\MainMenuState">
+      <UniqueIdentifier>{9b4fa386-147d-4926-8e8e-66f0f6519573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectFactory">
+      <UniqueIdentifier>{9b67bef4-98d8-4f3d-a0e4-e2960e9f2e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{e6c9b003-03b1-448b-a2ae-6e3f61a29675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjectCleaner">
+      <UniqueIdentifier>{fecd9a72-0392-4b0d-845b-6299a3c54582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionDection">
+      <UniqueIdentifier>{efca1ecc-b564-455e-a836-8bc0cb15a588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InputManager">
+      <UniqueIdentifier>{f4fa6d74-a7fa-4167-afa1-32f63bf7ebab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Definitions">
+      <UniqueIdentifier>{2311f300-ba8c-429a-a74a-e085b2dca42e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>GameData</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaTime.cpp">
+      <Filter>DeltaTime</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>AssetManager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>States\MainMenuState</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashState.cpp">
+      <Filter>States\SplashState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>States\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFactory.cpp">
+      <Filter>ObjectFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectCleaner.cpp">
+      <Filter>GameObjectCleaner</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDection.cpp">
+      <Filter>CollisionDection</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>InputManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="State.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>GameData</Filter>
+    </ClInclude>
+    <ClInclude Include="DeltaTime.h">
+      <Filter>DeltaTime</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashState.h">
+      <Filter>States\SplashState</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.h">
+      <Filter>States\MainMenuState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>States\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>ObjectFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectCleaner.h">
+      <Filter>GameObjectCleaner</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDection.h">
+      <Filter>CollisionDection</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Definitions.h">
+      <Filter>Definitions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+﻿  GameObject.cpp
+  main.cpp
+  Generating Code...
+C:\Users\Ghost\Desktop\SDL2_GameEngine_Fenrir\GameObject.cpp(99): warning C4715: 'GameObject::OnUse': not all control paths return a value
+  SDL2_GameEngine_Fenrir.vcxproj -> C:\Users\Ghost\Desktop\SDL2_GameEngine_Fenrir\x64\Debug\SDL2_GameEngine_Fenrir.exe
