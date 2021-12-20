@@ -1,23 +1,26 @@
 #include "SplashState.h"
 //#include "Definition.h"
 #include "MainMenuState.h"
-
+#include "GameObject.h"
 
 
 SplashState::SplashState(GameEngine::GameDataRef data)
 	: m_data(data)
 {
+
 }
 //unloads data from the maps that are no longger in use
 SplashState::~SplashState()
 {
+	
 	
 }
 
 // loads texture to asset manager & sets textures 
 void SplashState::Init()
 {
-
+	GameObject object(m_data, 100, 100, m_data->window.LoadTexture("Resources/res/Player.png"));
+	Object = object;
 }
 
 
@@ -39,6 +42,12 @@ void SplashState::Update(float dt)
 //renders state 
 void SplashState::Draw()
 {
+	m_data->window.Clear();
+	m_data->window.Render(Object);
+	m_data->window.Draw();
+
+
+	
 
 
 }

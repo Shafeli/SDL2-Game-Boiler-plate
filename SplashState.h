@@ -3,7 +3,7 @@
 
 #include "GameManager.h"
 #include "State.h"
-
+#include "GameObject.h"
 
 class SplashState : public State
 {
@@ -21,7 +21,7 @@ class SplashState : public State
 
 	//background sprite
 
-
+	GameObject Object;
 public:
 
 	//c'tor takes in reference to Game Data struct

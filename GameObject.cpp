@@ -9,9 +9,20 @@
 ///////////////////////////////////////////
 // Create Object
 ///////////////////////////////////////////
-GameObject::GameObject(GameEngine::GameDataRef data)
+GameObject::GameObject(GameEngine::GameDataRef data, float x, float y, SDL_Texture* texture)
     :m_data(data)
+    , m_x(x)
+    , m_y(y)
+    , m_texture(texture)
 {
+    m_currentFrame.x = 0;
+    m_currentFrame.y = 0;
+
+    //scale
+    m_currentFrame.w = 56;
+    m_currentFrame.h = 56;
+
+    std::cout << "I'm Alive\n";
 }
 
 void GameObject::GameObjectInit()

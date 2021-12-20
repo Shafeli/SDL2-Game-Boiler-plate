@@ -1,0 +1,545 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Ghost/Desktop/SDL2-2.0.18/include/SDL_rect.h"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_PointInRect",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30137.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x005AC1B0 -il C:\\Users\\Ghost\\AppData\\Local\\Temp\\_CL_767a6d23ast -typedil -f SplashState.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930137 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\SplashState.obj -Fdx64\\Debug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\Ghost\\Desktop\\SDL2_GameEngine_Fenrir -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Users\\Ghost\\Desktop\\SDL2_image-2.0.5\\include -I C:\\Users\\Ghost\\Desktop\\SDL2-2.0.18\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Ghost/Desktop/SDL2-2.0.18/include/SDL_rect.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0fd6ab704b064bbf42876a82c84196aa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/splashstate.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "c974191233ab837af9dea1e4c703730b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/splashstate.h"
+          },
+          "hashes": {
+            "md5": "d4c44095eeb2393ec5bdb7c3a91a24b3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/gamemanager.h"
+          },
+          "hashes": {
+            "md5": "18a56e57c23c83c7a5f7d07e53986124"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_video.h"
+          },
+          "hashes": {
+            "md5": "679eeb0972d4a9e818f23f931e15180e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_stdinc.h"
+          },
+          "hashes": {
+            "md5": "5990ec17c632bd382226e9caa9981d09"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_config.h"
+          },
+          "hashes": {
+            "md5": "fc952b44ad79c6c7df51071273d73052"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_platform.h"
+          },
+          "hashes": {
+            "md5": "eb91cb6cd8fedd95396cc6ec8ac053bf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/begin_code.h"
+          },
+          "hashes": {
+            "md5": "05e91fdaf36900be07dd817f3eb10987"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/close_code.h"
+          },
+          "hashes": {
+            "md5": "7b6b8e4df66cbbd5d2b3b84d99fd57bb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_pixels.h"
+          },
+          "hashes": {
+            "md5": "55784e676cf531bbad5f3bfcbe6c9989"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_endian.h"
+          },
+          "hashes": {
+            "md5": "8114897f194093e5fb7d9071a1a22cc7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_error.h"
+          },
+          "hashes": {
+            "md5": "67fc0a110d6295da19559602fea59e30"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_rwops.h"
+          },
+          "hashes": {
+            "md5": "2fc8153e03b4d75d69eafdffcbba71e2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_surface.h"
+          },
+          "hashes": {
+            "md5": "3a9318a07e482608d4d424efe93789a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_blendmode.h"
+          },
+          "hashes": {
+            "md5": "7f25709914882da4e024bc13a476abdc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/assetmanager.h"
+          },
+          "hashes": {
+            "md5": "994999caaa4c948e1d9da63c674fcc23"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl.h"
+          },
+          "hashes": {
+            "md5": "79c72f231ae12488f984896d3e9dc422"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_main.h"
+          },
+          "hashes": {
+            "md5": "73af8283a650d0bc78820dc27e75d5af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_assert.h"
+          },
+          "hashes": {
+            "md5": "5bfb7008a9b6883adbce9a6cedc67bd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_atomic.h"
+          },
+          "hashes": {
+            "md5": "1c299f9348d35681ba12e8f3664ddc7b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_audio.h"
+          },
+          "hashes": {
+            "md5": "52b46d23f3a9aa0fc407e918bf31204d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_mutex.h"
+          },
+          "hashes": {
+            "md5": "456332d9c912e69a8a9b31e069f0a83a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_thread.h"
+          },
+          "hashes": {
+            "md5": "cb2c8df3f2b2342afc634986a32a1ee8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_clipboard.h"
+          },
+          "hashes": {
+            "md5": "f557af67ff7b43237cd73eab9f4c4d8d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_cpuinfo.h"
+          },
+          "hashes": {
+            "md5": "87f7286d2e9ad2748b460cc199ba3c1b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_events.h"
+          },
+          "hashes": {
+            "md5": "c0afb9c80a9f3623b1243667bdbf3423"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_keyboard.h"
+          },
+          "hashes": {
+            "md5": "e02745596d243c18b86a040119124d25"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_keycode.h"
+          },
+          "hashes": {
+            "md5": "16a419bf83800d232d562a6246fcd03d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_scancode.h"
+          },
+          "hashes": {
+            "md5": "e99fada689e4cf90b81cc537da5083f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_mouse.h"
+          },
+          "hashes": {
+            "md5": "1aef3563feff37d880ad175c22bde42a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_joystick.h"
+          },
+          "hashes": {
+            "md5": "042f80a191b498c9040bbe305ea740e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_gamecontroller.h"
+          },
+          "hashes": {
+            "md5": "34c69cd35280c2e726da0746b71b4895"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_sensor.h"
+          },
+          "hashes": {
+            "md5": "79682633f7f5a0ed2a30401db03687fa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_quit.h"
+          },
+          "hashes": {
+            "md5": "2a67a02e57463b876d975b3e6bd71e0c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_gesture.h"
+          },
+          "hashes": {
+            "md5": "de2e73748f374cba1be79b48672de001"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_touch.h"
+          },
+          "hashes": {
+            "md5": "c215704b5f5d32bf2c2beabb318f1e01"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_filesystem.h"
+          },
+          "hashes": {
+            "md5": "563207fcb7c2d0ac2267be5c68d65164"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_haptic.h"
+          },
+          "hashes": {
+            "md5": "c1cf7542e16dcfb392781dae87e37585"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_hidapi.h"
+          },
+          "hashes": {
+            "md5": "efb2714c7322cdfaf55d3734be013d00"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_hints.h"
+          },
+          "hashes": {
+            "md5": "5e4a23314ffad5e51cfe6268901434dc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_loadso.h"
+          },
+          "hashes": {
+            "md5": "0d3923e2bd6b54c0435e70929d32a9e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_log.h"
+          },
+          "hashes": {
+            "md5": "7ff3ea1625f5c745e8a4b30954e0ce0d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_messagebox.h"
+          },
+          "hashes": {
+            "md5": "58e345089a604691dcbcb2c308dc02a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_metal.h"
+          },
+          "hashes": {
+            "md5": "dd6d1d9efe154c58769bfac4d77cc6d5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_power.h"
+          },
+          "hashes": {
+            "md5": "a8a10467169e075e04c8e47f36c69668"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_render.h"
+          },
+          "hashes": {
+            "md5": "bf0ed79be7e061cb1d2dd58a83d48843"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_shape.h"
+          },
+          "hashes": {
+            "md5": "0deb40463bbd5af43d5088948d9c87d2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_system.h"
+          },
+          "hashes": {
+            "md5": "33314b1e77fe4ae5d92381a679806ed5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_timer.h"
+          },
+          "hashes": {
+            "md5": "cbca78ce236829049953e9e03b79d259"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_version.h"
+          },
+          "hashes": {
+            "md5": "319f2f873961c00f33297428c053b744"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_locale.h"
+          },
+          "hashes": {
+            "md5": "f46a15ce97f80b172172aeb3f24ed122"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2-2.0.18/include/sdl_misc.h"
+          },
+          "hashes": {
+            "md5": "1d9ed01bb9eda4e7ee097274888a5eb7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/collisiondection.h"
+          },
+          "hashes": {
+            "md5": "d8215e0449d8ed5a66920b1335ca889a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/deltatime.h"
+          },
+          "hashes": {
+            "md5": "bf59e72e5b7e1babd37915b5eb61fa36"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/inputmanager.h"
+          },
+          "hashes": {
+            "md5": "56f06752e7d16d019847cd190de39d8d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/objectcleaner.h"
+          },
+          "hashes": {
+            "md5": "e5d89ec701a568b32ecf210997f45017"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/renderwindow.h"
+          },
+          "hashes": {
+            "md5": "59d59310902b983bc3c76b484998cbdd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/statemachine.h"
+          },
+          "hashes": {
+            "md5": "d366c5a5eb7287bcadda931656da8e31"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/state.h"
+          },
+          "hashes": {
+            "md5": "07603b3af9e2892ad0217fdc91c94925"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/ghost/desktop/sdl2_gameengine_fenrir/mainmenustate.h"
+          },
+          "hashes": {
+            "md5": "a6b5a9383f1904aa1d83bdcb31a7be22"
+          }
+        }
+      ]
+    }
+  ]
+}

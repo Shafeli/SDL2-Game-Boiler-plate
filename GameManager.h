@@ -7,6 +7,7 @@
 #include "DeltaTime.h"
 #include "InputManager.h"
 #include "ObjectCleaner.h"
+#include "RenderWindow.h"
 #include "StateMachine.h"
 
 
@@ -14,7 +15,7 @@ struct GameData
 {
     DeltaTime deltaTime;
     StateMachine machine;
-    SDL_Window* window = nullptr;
+    RenderWindow window;
     AssetManager assets;
     InputManager input;
     ObjectCleaner grabage;
@@ -39,10 +40,10 @@ class GameManager
     //GameEngine::Clock m_clock;
     GameEngine::GameDataRef m_data = std::make_shared<GameData>();
 public:
-    GameManager(int width, int hieght);
+    GameManager();
 
-    SDL_Window* GetWindow() { return m_data->window; }
+    SDL_Window* GetWindow() { return m_data->window.GetWindow(); }
     void Run();
-    void BuildWindow();
+
 };
 

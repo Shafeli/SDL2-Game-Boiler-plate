@@ -78,7 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Ghost\Desktop\SDL2-2.0.18\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Ghost\Desktop\SDL2_image-2.0.5\include;C:\Users\Ghost\Desktop\SDL2-2.0.18\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Ghost\Desktop\SDL2-2.0.18\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,8 +122,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Ghost\Desktop\SDL2-2.0.18\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Ghost\Desktop\SDL2_image-2.0.5\lib\x64;C:\Users\Ghost\Desktop\SDL2-2.0.18\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,6 +154,7 @@
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="ObjectCleaner.cpp" />
     <ClCompile Include="ObjectFactory.cpp" />
+    <ClCompile Include="RenderWindow.cpp" />
     <ClCompile Include="SplashState.cpp" />
     <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="ObjectCleaner.h" />
     <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="RenderWindow.h" />
     <ClInclude Include="SplashState.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="StateMachine.h" />

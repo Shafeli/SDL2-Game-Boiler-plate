@@ -43,6 +43,9 @@
     <Filter Include="Definitions">
       <UniqueIdentifier>{2311f300-ba8c-429a-a74a-e085b2dca42e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RenderWindow">
+      <UniqueIdentifier>{37e98617-6de7-412c-ad46-0a84c7d9cee8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="StateMachine.cpp">
@@ -82,6 +85,7 @@
     <ClCompile Include="InputManager.cpp">
       <Filter>InputManager</Filter>
     </ClCompile>
+    <ClCompile Include="RenderWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="State.h">
@@ -126,5 +130,6 @@
     <ClInclude Include="Definitions.h">
       <Filter>Definitions</Filter>
     </ClInclude>
+    <ClInclude Include="RenderWindow.h" />
   </ItemGroup>
 </Project>
